@@ -32,3 +32,8 @@ void APlayerBaseClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 }
 
+void APlayerBaseClass::Death()
+{
+
+}
+
