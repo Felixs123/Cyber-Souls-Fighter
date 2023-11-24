@@ -86,9 +86,6 @@ void ACyberSoulsFighterCharacter::SetupPlayerInputComponent(UInputComponent* Pla
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACyberSoulsFighterCharacter::Look);
-
-		//Attacking
-
 	}
 	else
 	{
@@ -98,7 +95,6 @@ void ACyberSoulsFighterCharacter::SetupPlayerInputComponent(UInputComponent* Pla
 
 void ACyberSoulsFighterCharacter::Move(const FInputActionValue& Value)
 {
-    UE_LOG(LogTemp, Warning, TEXT("Your message"));
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
